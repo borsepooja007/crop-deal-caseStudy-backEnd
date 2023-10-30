@@ -1,0 +1,18 @@
+server:
+   port: 8100
+      
+      
+zuul:
+   routes:
+      dealer-service:
+         url: http://localhost:9002
+      farmer-service:
+         url: http://localhost:9001
+      admin-service:
+         url: http://localhost:9003
+      login-service:
+         url: http://localhost:9004
+      crop-service:
+         url: http://localhost:9005
+      payment_service:
+         url: http://localhost:9006
